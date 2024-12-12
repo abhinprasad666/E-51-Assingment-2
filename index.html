@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <!-- link my css file -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- header start -->
+    <header>
+      <h1>Online Student Grade Checking System</h1>
+      <nav>
+        <ul class="nav-ul">
+            <li>Login</li>
+            <li>SingUp</li>
+        </ul>
+      </nav>
+    </header>
+    <!-- header end -->
+
+
+    <!-- form start -->
+    <div class="from-box">
+      <form action="" id="form">
+        <ul class="form-ul">
+          <li>
+            <!-- student name input-box -->
+            <label for="">Enter Your Name:</label>
+            <input
+              type="text"
+              class="name-inp-box"
+              placeholder="Enter Your Name"
+              id="nameInputBox"
+            />
+          </li>
+          <!-- this label is name error msg -->
+          <li>
+            <label for="" id="error-msg"> </label>
+        </li>
+         
+
+          <li>
+            <!-- student score input-box -->
+            <label for="">Enter Your Score:</label>
+            <input
+              type="number"
+              min="0"
+              max="100"
+              class="score-inp-box"
+              placeholder="Enter Your Score"
+              id="scoreInputBox"
+            />
+          </li>
+            <!-- this label is score error msg -->
+          <li>
+            <label for="" id="error-msg-score"></label>
+        </li>
+          <li>
+            <!-- check result btn -->
+            <button class="result-check-btn" type="submit">Check Result</button>
+            <!-- reset score btn-->
+            <button class="reset-btn" type="reset" id="resetButton">
+              Reset
+            </button>
+          </li>
+        </ul>
+      </form>
+<!-- form end -->
+
+<!-- result popup box -->
+      <div id="popup-box">
+        <h4 class="result-box-h2" id="popup-box-h4">You are pass</h4>
+        <ul>
+          <li class="res-li">
+            <label for="">Name: <span id="resultName"></span></label>
+          </li>
+          <li class="res-li">
+            <label for="">Score: <span id="resultScore"></span></label>
+          </li>
+          <li class="res-li " id="grade-li">
+            <label for="">Grade: <span id="resultGrade"></span></label>
+          </li>
+        </ul>
+      </div>
+      <!-- reult popup box end -->
+    </div>
+
+    <!-- link my js file -->
+    <script src="script.js"></script>
+  </body>
+</html>

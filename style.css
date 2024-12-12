@@ -1,0 +1,147 @@
+/* css reset */
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: rgb(68, 67, 68);
+    overflow: hidden;
+}
+/* header start */
+header{
+    color: #fff;
+    background-color: rgb(191, 11, 161);
+    padding: 20px;
+    text-align: center;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.nav-ul{
+    display: flex;
+    gap: 20px;
+    font-size: 20px;
+
+}
+li{
+    list-style: none;
+}
+/* header end */
+
+
+
+.from-box{
+    width: 500px;
+    height: 500px;
+    background-color:#fff;
+    border-radius: 10px;
+    margin: auto;
+    position: relative;
+    top: 100px;
+
+   
+}
+
+  
+    .form-ul{
+margin-left: 100px;
+position: relative;
+top: 50px;
+
+
+li{
+    margin: 20px;
+    list-style: none;
+}
+    }
+
+  
+.name-inp-box,.score-inp-box{
+   width: 40%;
+   padding: 5px ;
+   border: solid black 1px;
+   border-radius: 5px;
+
+}
+label{
+   font-size: 20px;
+   font-weight: bold;
+}
+
+
+.result-check-btn{
+    padding: 8px 20px;
+    width: 148px;
+ 
+    text-align: center;
+    background-color: rgb(23, 180, 23);
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    font-weight: bold;
+}
+.reset-btn{
+    padding: 8px 20px;
+    width: 148px;
+   
+    text-align: center;
+    background-color: red;
+    color: #fff;
+    border: none;
+    border-radius: 5px;
+    margin-left: 5px;
+    font-weight: bold;
+}
+
+
+#popup-box{
+    width:250px;
+    height: 200px;
+    background-color: gray;
+    margin: auto;
+    border-radius: 10px;
+    position: relative;
+    top: 60px;
+    padding: 20px;
+    display: none;
+
+ h4{
+    text-align: center;
+    color: #fff;
+ }
+ li{
+    list-style: none;
+    margin: 20px;
+ }
+}
+
+.result-box label,.res-li{
+    font-size: 20px;
+    font-weight: bold;
+    color: #fff;
+}
+#error-msg{
+    background-color: rgb(247, 139, 139);
+    padding: 5px 40px;
+    color: rgb(241, 11, 11);
+    border-radius: 5px;
+    font-size: 15px;
+    max-width: 305px;
+    text-align: center;
+    display: none;
+
+
+}
+#error-msg-score{
+    display: inline-block;
+    background-color: rgb(247, 139, 139) ;
+    padding: 5px 40px;
+    color: rgb(241, 11, 11);
+    border-radius: 5px;
+    font-size: 15px;
+    width: 305px;
+    text-align: center;
+    display: none;
+
+}
